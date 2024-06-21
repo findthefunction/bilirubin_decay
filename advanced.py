@@ -77,3 +77,6 @@ predicted_data = pd.DataFrame({
 
 # Display the combined DataFrame
 import ace as tools; tools.display_dataframe_to_user(name="Predicted Bilirubin Levels", dataframe=predicted_data)
+
+# Save the combined DataFrame to a CSV file
+predicted_data.to_csv('predicted_bilirubin_levels.csv', index=False)
